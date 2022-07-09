@@ -1,0 +1,18 @@
+.specification__price {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 33px;
+  font-family: 'Barlow';
+  margin-top: 16px;
+  & span:first-child {
+    margin-right: 8px;
+  }
+  & span.original-price {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 165%;
+    font-family: 'Barlow';
+    text-decoration: line-through;
+    vertical-align: text-bottom;
+  }
+}

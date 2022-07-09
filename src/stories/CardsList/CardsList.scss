@@ -1,0 +1,17 @@
+.page-container {
+  position: relative;
+  flex: 1;
+  background-color: #F6F6F6;
+  padding: 2rem 0;
+
+  .section-container {
+    max-width: 1010px;
+    position: relative;
+    margin: 2rem auto;
+    background-color: #ffffff;
+
+    &__content {
+      padding: 2em 7em;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.star-rating {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 15px;
+  gap: 2.7px;
+  
+  span {
+    &:last-child {
+      margin-left: 5px;
+    }
+  }
+}

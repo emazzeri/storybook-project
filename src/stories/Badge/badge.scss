@@ -1,0 +1,30 @@
+.badge {
+  display: flex;
+  align-items: flex-end;
+  width: 37px;
+  height: 34px;
+
+  &.new {
+    background: linear-gradient(
+      200.13deg,
+      #abaecc 72.01%,
+      rgba(255, 198, 38, 0) 72.37%
+    );
+  }
+  &.used {
+    background: linear-gradient(
+      200.13deg,
+      #ffb000 72.01%,
+      rgba(255, 198, 38, 0) 72.37%
+    );
+  }
+
+  font-family: 'Barlow';
+  font-style: italic;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}

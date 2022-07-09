@@ -1,0 +1,50 @@
+button {
+  border: none;
+
+  a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  &.btn__card {
+    padding: 13px 16px;
+    height: 48px;
+    background-color: #000000;
+    color: #ffffff;
+    text-transform: uppercase;
+    transition: background-color 0.5s ease;
+
+    &:hover {
+      background-color: #727981;
+      transition: background-color 0.5s ease;
+      cursor: pointer;
+    }
+  }
+
+  &.font-button {
+    &-l {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 21.6px;
+      text-transform: uppercase;
+      font-family: 'Barlow';
+      font-style: italic;
+    }
+    &-m {
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 17px;
+      text-transform: uppercase;
+      font-family: 'Barlow';
+      font-style: italic;
+    }
+    &-s {
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 14.4px;
+      text-transform: uppercase;
+      font-family: 'Barlow';
+      font-style: italic;
+    }
+  }
+}

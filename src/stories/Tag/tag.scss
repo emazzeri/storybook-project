@@ -1,0 +1,42 @@
+.tag {
+  font-size: 12;
+  font-weight: 700;
+  line-height: 14px;
+  text-transform: uppercase;
+  font-family: 'Barlow';
+  font-style: italic;
+
+  width: fit-content;
+  padding: 4px 8px;
+  margin-bottom: 4px;
+  display: flex;
+  gap: 10px;
+
+  &.light {
+    background-color: #F6F6F6;
+    & span:first-child {
+      color: #A1A1A1;
+    }
+    & span:last-child {
+      color: #646464;
+    }
+  }
+
+  &.dark {
+    background-color: #646464;
+    & span:first-child {
+      color: #F6F6F6;
+    }
+    & span:last-child {
+      color: #ffffff;
+    }
+  }
+
+  & span {
+    margin: 0;
+  }
+
+  &.my-16 {
+    margin: 16px 0;
+  }
+}
