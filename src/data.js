@@ -1,0 +1,46 @@
+export const bike = [
+  {
+    id: 0,
+    brand: "Cannondale",
+    model: "Adventure NEO",
+    year: 2019,
+    description: "Una bici elettrica ideale per andare al lavoro o per godersi le caratteristiche stradine di campagna",
+    size: 'S M L XL',
+    images: [
+      {
+        "description": "Image-1",
+        "imageUrl": "https://www.bosch-ebike.com/fileadmin/_processed_/8/4/csm_Bosch-eBike-Citybike-Studio-MY2021-right-freigestellt-3_60a04317c9.png?_=1627893255",
+        "position": 1,
+        "title": "Spree T-Shirt - Grey Small",
+      },
+      {
+        "description": "Image-2",
+        "imageUrl": "https://dinamociclo.it/wp-content/uploads/MARATEA-WOMAN-BROWN-350x350.jpg",
+        "position": 2,
+        "title": "Spree T-Shirt - Grey Small",
+      },
+      {
+        "description": "Image-1",
+        "imageUrl": "https://www.ghost-bikes.com/fileadmin/_processed_/4/2/csm_ghost-bikes-e-riot-trail-pro-darkred-orange-45_e77562ff63.png",
+        "position": 3,
+        "title": "Spree T-Shirt - Grey Small",
+      },
+      {
+        "description": "Image-1",
+        "imageUrl": "https://img.remediosdigitales.com/157fe4/ducati-ebike/450_1000.jpg",
+        "position": 4,
+        "title": "Spree T-Shirt - Grey Small",
+      },
+    ],
+    numberOfColours: '+4',
+    categoryType: 'ebike',
+    category: "corsa",
+    isPreffered: false,
+    isNew: false,
+    rating: 4,
+    opinion_count: 8560,
+    currency: '€',
+    price: 2855,
+    originalPrice: 3526,
+  },
+]

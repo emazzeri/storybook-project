@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './button.scss';
 
-export const Button = ({ backgroundColor, size, label, ...props }) => {
+export const Button = ({ backgroundColor, size, label, handleClick, ...props }) => {
   return (
     <button
       type="button"
@@ -17,14 +17,13 @@ export const Button = ({ backgroundColor, size, label, ...props }) => {
 };
 
 Button.propTypes = {
-  backgroundColor: null,
+  backgroundColor: PropTypes.string,
   size: PropTypes.oneOf(['s', 'm', 'l']),
   label: PropTypes.string.isRequired,
   onClick: PropTypes.func,
 };
 
 Button.defaultProps = {
-  backgroundColor: null,
+  backgroundColor: '#131313',
   size: 'l',
-  onClick: undefined,
 };

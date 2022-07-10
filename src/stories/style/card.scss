@@ -39,14 +39,15 @@
         align-items: center;
       }
       &__title {
-        // @include typography(
-        //   $font-size-heading,
-        //   700,
-        //   $line-height-heading,
-        //   uppercase,
-        //   null,
-        //   italic
-        // );
+        @include typography(
+          $font-size-heading,
+          700,
+          $line-height-heading,
+          uppercase,
+          'Archivio',
+          italic
+        );
+        letter-spacing: 1px;
         color: #000000;
         transition: all 0.3s cubic-bezier(0.65, 0, 0.076, 1);
         margin: 5px 0;
@@ -78,30 +79,30 @@
           }
         }
       }
-      // &__description {
-      //   @include typography(
-      //     $font-size-subtitle,
-      //     400,
-      //     $line-height-subtitle,
-      //     null,
-      //     null,
-      //     italic
-      //   );
-      // }
+      &__description {
+        @include typography(
+          $font-size-subtitle,
+          400,
+          $line-height-subtitle,
+          null,
+          null,
+          italic
+        );
+      }
       &__price {
-        // @include typography(
-        //   $font-size-body,
-        //   600,
-        //   $line-height-body,
-        //   null,
-        //   'Barlow'
-        // );
+        @include typography(
+          $font-size-body,
+          600,
+          $line-height-body,
+          null,
+          'Barlow'
+        );
         margin-top: 16px;
         & span:first-child {
           margin-right: 8px;
         }
         & span.original-price {
-          // @include typography($font-size-label-m, 400, 165%, null, 'Barlow');
+          @include typography($font-size-label-m, 400, 165%, null, 'Barlow');
           text-decoration: line-through;
           vertical-align: text-bottom;
         }
@@ -120,12 +121,12 @@
     }
   }
 
-  // .brand {
-  //   @include typography(
-  //     $font-size-label-s,
-  //     700,
-  //     $line-height-label-s,
-  //     uppercase
-  //   );
-  // }
+  .brand {
+    @include typography(
+      $font-size-label-s,
+      700,
+      $line-height-label-s,
+      uppercase
+    );
+  }
 }

@@ -10,7 +10,6 @@ function CardsList({ children, spacing = 2, column = 2 }) {
     justifConteny: "space-between",
   }
 
-
   return(
     <div className="page-container">
       <section className="section-container">

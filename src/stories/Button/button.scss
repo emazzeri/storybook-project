@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Barlow';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url('../../../public/fonts/Barlow/Barlow-Regular.ttf') format('truetype');
+}
 button {
   border: none;
 
@@ -13,6 +20,11 @@ button {
     color: #ffffff;
     text-transform: uppercase;
     transition: background-color 0.5s ease;
+
+    & [class^='icon-'] {
+      margin-left: 15px;
+      font-size: 16px;
+    }
 
     &:hover {
       background-color: #727981;

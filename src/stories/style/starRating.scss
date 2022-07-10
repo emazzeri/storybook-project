@@ -3,11 +3,22 @@
   flex-direction: row;
   align-items: center;
   font-size: 15px;
+  font-family: 'Barlow';
+  font-style: italic;
+  font-weight: 700;
   gap: 2.7px;
-  
+
   span {
     &:last-child {
       margin-left: 5px;
     }
+  }
+
+  .cl-medium-grey {
+    color: #727981;
+  }
+
+  .cl-very-light-grey {
+    color: #F0F0F0;
   }
 }

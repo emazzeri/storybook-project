@@ -1,0 +1,22 @@
+// Primary
+$black: #131313;
+$white: #ffffff;
+
+// Secondary
+$dark-grey: #646464;
+$medium-grey: #727981;
+$grey: #A1A1A1;
+$light-grey: #F6F6F6;
+$very-light-grey: #F0F0F0;
+$lilac: #abaecc;
+$yellow: #ffb000;
+
+// Tertiary
+$green: #20bf55;
+$red: #f65959;
+$orange: #ff9800;
+
+@import './typography.scss';
+@import './starRating.scss';
+@import './card.scss';
+@import './cardSwiper.scss';

@@ -1,0 +1,177 @@
+$font-family-base: 'Archivio', sans-serif;
+
+// Font weight
+$font-weight-thin: 200;
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
+$font-weight-extra-bold: 800;
+$font-weight-black: 900;
+
+// Font size
+$font-size-button-l: 18px;
+$font-size-button-s: 12px;
+$font-size-heading: 24px;
+$font-size-subtitle: 12px;
+$font-size-body: 20px;
+$font-size-label-m: 14px;
+$font-size-label-s: 12px;
+$font-size-tag: 12px;
+
+// Line Height
+$line-height-button-l: 21.6px;
+$line-height-button-s: 14.4px;
+$line-height-heading: 30.72px;
+$line-height-subtitle: 16.8px;
+$line-height-body: 33px;
+$line-height-label-m: 23.1px;
+$line-height-label-s: 16.8px;
+$line-height-tag: 14.4px;
+
+/* Archivio */
+@font-face {
+  font-family: Archivio;
+  font-weight: $font-weight-regular;
+  font-style: normal;
+  font-display: swap;
+  src: url('../../../public/fonts/Archivo/Archivo-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Archivio;
+  font-weight: $font-weight-regular;
+  font-style: italic;
+  font-display: swap;
+  src: url('../../../public/fonts/Archivo/Archivo-Italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Archivio;
+  font-weight: $font-weight-bold;
+  font-style: normal;
+  font-display: swap;
+  src: url('../../../public/fonts/Archivo/Archivo-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Archivio;
+  font-weight: $font-weight-black;
+  font-style: normal;
+  font-display: swap;
+  src: url('../../../public/fonts/Archivo/Archivo-Black.ttf') format('truetype');
+}
+
+/* Barlow */
+@font-face {
+  font-family: 'Barlow', sans-serif;
+  font-weight: $font-weight-light;
+  font-style: normal;
+  font-display: swap;
+  src: url('../../../public/fonts/Barlow/Barlow-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Barlow;
+  font-weight: $font-weight-regular;
+  font-style: normal;
+  font-display: swap;
+  src: url('../../../public/fonts/Barlow/Barlow-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Barlow;
+  font-weight: $font-weight-semi-bold;
+  font-style: normal;
+  font-display: swap;
+  src: url('../../../public/fonts/Barlow/Barlow-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Barlow;
+  font-weight: $font-weight-bold;
+  font-style: normal;
+  font-display: swap;
+  src: url('../../../public/fonts/Barlow/Barlow-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Barlow;
+  font-weight: $font-weight-black;
+  font-style: normal;
+  font-display: swap;
+  src: url('../../../public/fonts/Barlow/Barlow-Black.ttf') format('truetype');
+}
+
+@mixin typography(
+  $size: $font-size-body,
+  $weight: 500,
+  $line-height: 24px,
+  $text-trasform: none,
+  $family: $font-family-base,
+  $style: normal,
+) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line-height;
+  text-transform: $text-trasform;
+  font-family: $family;
+  font-style: $style;
+}
+
+/* Icon */
+@font-face {
+  font-family: 'flp-icon';
+  src: url('../../../public/fonts/flpIcon/flp-icon.eot');
+  src: url('../../../public/fonts/flpIcon/flp-icon.eot')
+      format('embedded-opentype'),
+    url('../../../public/fonts/flpIcon/flp-icon.ttf') format('truetype'),
+    url('../../../public/fonts/flpIcon/flp-icon.woff') format('woff'),
+    url('../../../public/fonts/flpIcon/flp-icon.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'flp-icon' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-checkmark:before {
+  content: "\e902";
+}
+.icon-arrow-right:before {
+  content: "\e900";
+}
+.icon-arrow-left:before {
+  content: "\e901";
+}
+.icon-arrow-down:before {
+  content: "\e903";
+}
+.icon-arrow-up:before {
+  content: "\e904";
+}
+.icon-star-empty:before {
+  content: "\e9d7";
+}
+.icon-star-full:before {
+  content: "\e9d9";
+}
+.icon-heart-o:before {
+  content: "\e905";
+}
+.icon-heart:before {
+  content: "\e906";
+}

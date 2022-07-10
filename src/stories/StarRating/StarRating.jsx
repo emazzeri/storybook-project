@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './starRating.scss'
+import '../style/index.scss'
 
 export const StarRating = ({ rating, opinion_count }) => {
   return (
@@ -18,4 +18,9 @@ export const StarRating = ({ rating, opinion_count }) => {
 StarRating.propTypes = {
   rating: PropTypes.oneOf([0,1,2,3,4,5]),
   opinion_count: PropTypes.number,
+};
+
+StarRating.defaultProps = {
+  rating: 4,
+  opinion_count: 8523,
 };
